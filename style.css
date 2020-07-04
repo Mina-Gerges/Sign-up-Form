@@ -1,7 +1,10 @@
 @import "https://fonts.googleapis.com/css2?family=Poppins&display=swap";
 
 
-
+body {
+    background-image: url('images/bg-intro-desktop.png');
+    background-color: hsl(0, 100%, 74%) ;
+}
 
 
 /* footer attribution  */
