@@ -14,8 +14,9 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    
 }
+
+/* Page Text  */
 
 .pageText {
     flex-basis: 50%;
@@ -23,23 +24,54 @@ main {
     padding-right: 10px;
 }
 
+/* Form  */
+
 .formBox {
     flex-basis: 50%;
     padding-left: 10px;
 }
 
-form {
-    display: inline-flex;
-    flex-direction: column;
-    column-gap: 10px;
+#freeTrial {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 30px;
+    border-radius: 10px;
 }
 
-form > * {
-    margin-top: 6px;
-    height: 40px;
-  }
+form {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+form > input , form > button {
+    margin-top: 10px;
+    height: 50px;
+    border-radius: 5px;
+}
+
+input{
+    padding:0 30px;
+}
+
+/* footer attribution  */
+
+.attribution { 
+    font-size: 16px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
 
 /* Validation */
+
+[hidden] { 
+    display: none;
+}
 
 input:focus:invalid {
     color: #c33;
@@ -54,32 +86,20 @@ input:valid {
     border-bottom: transparent;
 }
 
-
 /* Fonts */
 
 h1 { 
-    font: 16px 'Poppins', sans-serif;
+    font: bolder 2.5em 'Poppins', sans-serif;
 }
 
 h2 { 
-    font: 16px 'Poppins', sans-serif;
+    font: 2em 'Poppins', sans-serif;
 }
 
 h3 { 
-    font: 16px 'Poppins', sans-serif;
+    font: 1.5em 'Poppins', sans-serif;
 }
 
 h4 { 
-    font: 16px 'Poppins', sans-serif;
-}
-
-/* footer attribution  */
-
-.attribution { 
-    font-size: 11px; 
-    text-align: center; 
-}
-
-.attribution a { 
-    color: hsl(228, 45%, 44%); 
+    font: 1em 'Poppins', sans-serif;
 }

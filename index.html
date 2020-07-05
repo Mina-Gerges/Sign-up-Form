@@ -3,10 +3,11 @@
 <head>
 
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"> <!-- displays site properly based on user's device -->
   <title>Sign up form</title>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/MinA Logo.png">
   <link rel="stylesheet" href="style.css" >
 </head>
 <body>
@@ -22,33 +23,53 @@
     </article>
 
     <article class="formBox">
-      <section>
-        Try it free 7 days then $20/mo. thereafter
-      </section>
-      <form>
-        <input type="text"
+      <button id="freeTrial" type="button">  Try it free 7 days then $20/mo. thereafter </button>
+
+      <form novalidate>
+        <input id="firstName"
+        type="text"
         placeholder="First Name"
         required
         autofocus
-        class="form-control"
+        class="form-input"
         > 
-        <input type="text"
+        <label for="firstName">
+          <span data-rule="valueMissing" class="errorMessage" hidden>First Name cannot be empty</span>
+        </label>
+
+        <input id="lastName"
+        type="text"
         placeholder="Last Name"
         required
-        class="form-control"
+        class="form-input"
         > 
-        <input type="text"
+        <label for="lastName">
+          <span data-rule="valueMissing" class="errorMessage" hidden >Last Name cannot be empty</span>
+        </label>
+
+        <input id="email"
+        type="email"
         placeholder="Email Address"
         required
-        class="form-control"
+        class="form-input"
         > 
-        <input type="text"
+        <label for="email">
+          <span data-rule="valueMissing" class="errorMessage" hidden>Email cannot be empty</span>
+          <span data-rule="typeMismatch" class="errorMessage" hidden >Looks like this is not an email</span>
+        </label>
+
+        <input id="password"
+        type="password"
         placeholder="Password"
         required
-        class="form-control"
+        class="form-input"
         > 
-        <h2> Claim your free trial </h2>
-        <h6> By clicking the button, you are agreeing to our Terms and Services</h6>
+        <label for="password">
+          <span data-rule="valueMissing" class="errorMessage" hidden>Password cannot be empty</span>
+        </label>
+
+        <button type="button"> Claim your free trial </button>
+        <h6> By clicking the button, you are agreeing to our <a href=""><span>Terms and Services</span></a></h6>
       </form>
     </article>
 
