@@ -1,9 +1,10 @@
 @import "https://fonts.googleapis.com/css2?family=Poppins&display=swap";
 
-body {
+html, body {
     /* Background */
     background-image: url('images/bg-intro-desktop.png');
     background-color: hsl(0, 100%, 74%) ;
+    font-size: 1rem;
 }
 
 main {
@@ -32,10 +33,14 @@ main {
 }
 
 #freeTrial {
+    color: white;
     width: 100%;
     height: 50px;
     margin-bottom: 30px;
     border-radius: 10px;
+    border-color: transparent;
+    background-color: hsl(248, 32%, 49%);
+    box-shadow: 0px 7px rgba(0, 0, 0, 0.15);
 }
 
 form {
@@ -44,6 +49,7 @@ form {
     background-color: white;
     border-radius: 10px;
     padding: 30px;
+    box-shadow: 0px 7px rgba(0, 0, 0, 0.15);
 }
 
 form > input , form > button {
@@ -54,17 +60,43 @@ form > input , form > button {
 
 input{
     padding:0 30px;
+    border-color: hsl(246, 25%, 77%);
+}
+
+#claim {
+    color: white;
+    background-color: hsl(154, 59%, 51%);
+    border-color: transparent;
+}
+
+#termsText {
+    text-align: center;
+    color: hsl(246, 25%, 77%);
+}
+
+a {
+    color: hsl(0, 100%, 74%) ;
+    font-weight: bold;
+    text-decoration: none;
 }
 
 /* footer attribution  */
 
-.attribution { 
-    font-size: 16px; 
-    text-align: center; 
-}
-
 .attribution a { 
     color: hsl(228, 45%, 44%); 
+}
+
+footer p {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 16px; 
+}
+
+footer p * {
+    margin: 5px;
 }
 
 /* Validation */
@@ -75,7 +107,7 @@ input{
 
 input:focus:invalid {
     color: #c33;
-    border-color: #c33;
+    border: 1px solid #c33;
 }
 
 input:invalid {
@@ -89,17 +121,17 @@ input:valid {
 /* Fonts */
 
 h1 { 
-    font: bolder 2.5em 'Poppins', sans-serif;
+    font: 700 2.5em 'Poppins', sans-serif;
 }
 
 h2 { 
-    font: 2em 'Poppins', sans-serif;
+    font: 600 2em 'Poppins', sans-serif;
 }
 
 h3 { 
-    font: 1.5em 'Poppins', sans-serif;
+    font: 500 1.5em 'Poppins', sans-serif;
 }
 
 h4 { 
-    font: 1em 'Poppins', sans-serif;
+    font: 400 1em 'Poppins', sans-serif;
 }
