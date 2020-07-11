@@ -9,9 +9,10 @@ html, body {
 
 main {
     /* Display */
-    height: 100vh;
+    height: 50vh;
     max-width: 1000px;
     margin: 0 auto;
+    margin-top: 25vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -109,17 +110,12 @@ a {
     color: hsl(228, 45%, 44%); 
 }
 
-footer p {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    font-size: 16px; 
-}
-
-footer p * {
-    margin: 5px;
+#mina {
+    margin-top: 60px;
+    bottom: 5px;
+    border-radius: 1rem;
+    width: 14rem;
+    height: auto;
 }
 
 /* Validation */
@@ -157,4 +153,71 @@ h3 {
 
 h4 { 
     font: 400 0.85em 'Poppins', sans-serif;
+}
+
+
+/* Other screens */
+
+@media only screen and (max-device-width: 375px) {
+    main {
+        height: auto;
+        max-width: 200px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .pageText {
+        flex-basis: 100%;
+        color: white;
+    }
+    
+    /* Form  */
+    
+    .formBox {
+        flex-basis: 100%;
+    }
+
+    footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #mina {
+        margin: 10px;
+        border-radius: 1rem;
+        width: 12rem;
+        height: auto;
+    }
+}
+
+
+@media only screen and (max-device-width: 1000px) {
+
+    main {
+        height: auto;
+        margin-top: 0px;
+        max-width: 600px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #mina {
+        margin: 10px;
+        border-radius: 1rem;
+        width: 12rem;
+        height: auto;
+    }
 }
