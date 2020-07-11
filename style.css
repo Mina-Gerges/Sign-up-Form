@@ -110,11 +110,16 @@ a {
     color: hsl(228, 45%, 44%); 
 }
 
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 #mina {
-    margin-top: 60px;
-    bottom: 5px;
-    border-radius: 1rem;
-    width: 14rem;
+    margin-top: 100px;
+    border-radius: 0.75rem;
+    width: 20rem;
     height: auto;
 }
 
@@ -187,9 +192,9 @@ h4 {
     }
 
     #mina {
-        margin: 10px;
-        border-radius: 1rem;
-        width: 12rem;
+        margin-top: 20px;
+        border-radius: 0.75rem;
+        width: 17rem;
         height: auto;
     }
 }
@@ -215,9 +220,9 @@ h4 {
     }
 
     #mina {
-        margin: 10px;
-        border-radius: 1rem;
-        width: 12rem;
+        margin-top: 20px;
+        border-radius: 0.75rem;
+        width: 17rem;
         height: auto;
     }
 }
