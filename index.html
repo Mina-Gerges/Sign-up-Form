@@ -26,9 +26,10 @@
     <article class="formBox">
       <button id="freeTrial" type="button">  <b>Try it free 7 days</b> then $20/mo. thereafter </button>
 
-      <form id="">
+      <form id="signUpForm">
         <input id="firstName"
         type="text"
+        pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{0,20}$"
         placeholder="First Name"
         required
         autofocus
@@ -40,6 +41,7 @@
 
         <input id="lastName"
         type="text"
+        pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{0,20}$"
         placeholder="Last Name"
         required
         class="form-input"
@@ -61,12 +63,15 @@
 
         <input id="password"
         type="password"
+        pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$"
+        maxlength="8"
         placeholder="Password"
         required
         class="form-input"
         > 
         <label for="password">
           <span data-rule="valueMissing" class="errorMessage" hidden>Password cannot be empty</span>
+          <span data-rule="patternMismatch" class="errorMessage" hidden>Password should have lowercase , uppercase and number.</span>
         </label>
 
         <button id="claim" type="button"> <b>Claim your free trial</b> </button>

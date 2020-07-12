@@ -78,7 +78,8 @@ form > input , form > button {
 
 input{
     padding:0 30px;
-    border-color: hsl(246, 25%, 77%);
+    outline: none;
+    border: 1px solid hsl(246, 25%, 77%);
 }
 
 #claim {
@@ -127,19 +128,13 @@ footer {
 
 [hidden] { 
     display: none;
+    color: #c33;
+    margin-top: 5px;
 }
 
 input:focus:invalid {
     color: #c33;
     border: 1px solid #c33;
-}
-
-input:invalid {
-    border-bottom: 1px solid #c33;
-}
-
-input:valid {
-    border-bottom: transparent;
 }
 
 /* Fonts */
@@ -173,16 +168,9 @@ h4 {
         justify-content: center;
         align-items: center;
     }
-
-    .pageText {
-        flex-basis: 100%;
-        color: white;
-    }
     
-    /* Form  */
-    
-    .formBox {
-        flex-basis: 100%;
+    .pageText > section{
+        text-align: center;
     }
 
     footer {
@@ -196,6 +184,14 @@ h4 {
         border-radius: 0.75rem;
         width: 17rem;
         height: auto;
+    }
+
+    #freeTrial:hover {
+        background-color: hsl(248, 32%, 49%); 
+    }
+
+    #claim:hover {
+        background-color: hsl(154, 59%, 51%);  
     }
 }
 
@@ -212,6 +208,10 @@ h4 {
         justify-content: center;
         align-items: center;
     }
+
+    .pageText > section{
+        text-align: center;
+    }
     
     footer {
         display: flex;
@@ -224,5 +224,12 @@ h4 {
         border-radius: 0.75rem;
         width: 17rem;
         height: auto;
+    }
+
+    #freeTrial:hover {
+        background-color: hsl(248, 32%, 49%); 
+    }
+    #claim:hover {
+        background-color: hsl(154, 59%, 51%);  
     }
 }
